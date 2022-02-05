@@ -7,16 +7,48 @@
     border-radius: 4px;
     display: flex;
     flex-direction: column;
+    animation: pop 0.7s;
+}
+
+@keyframes pop {
+
+    0% {
+        width: 0px;
+        height: 0px;
+        opacity: 0;
+        bottom: 50px;
+    }
+
+    100% {
+        width: 700px;
+        height: 143px;
+        opacity: 1;
+        bottom: 18px;
+    }
 }
 
 .modal-header {
     display: flex;
     justify-content: space-between;
+
+    animation: appear 0.7s;
+
+}
+
+@keyframes appear {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
 
 .modal-header button {
     border: 0;
-    background: transparent;    
+    background: transparent; 
+       
 }
 
 .modal-container span {
@@ -36,6 +68,8 @@
     border-radius: 4px;
 
     color: #FFF;
+
+    animation: appear 0.7s;
 }
 
 @media (max-width: 750px) {
