@@ -27,16 +27,37 @@
     }
 }
 
+@keyframes pop-mobile {
+
+    0% {
+        width: 0px;
+        height: 0px;
+        opacity: 0;
+        bottom: 50px;
+    }
+
+    100% {
+        width: 90%;
+        height: 143px;
+        opacity: 1;
+        bottom: 18px;
+    }
+}
+
 .modal-header {
     display: flex;
     justify-content: space-between;
 
-    animation: appear 0.7s;
+    animation: appear 1.5s;
 
 }
 
 @keyframes appear {
     0% {
+        opacity: 0;
+    }
+
+    50% {
         opacity: 0;
     }
 
@@ -54,6 +75,8 @@
 .modal-container span {
     margin: 14px 0;
     color: #A7A7A7;
+    
+    animation: appear 1.5s;
 }
 
 .modal-link {
@@ -69,12 +92,15 @@
 
     color: #FFF;
 
-    animation: appear 0.7s;
+    animation: appear 1.5s;
 
 }
 
 @media (max-width: 750px) {
     .modal-container {
         width: 90%;
+        animation: pop-mobile 0.7s;
+
     }
+    
 }
