@@ -22,7 +22,7 @@ export default function Home() {
       setLink('');
       setModal(true);
     } catch {
-      alert('Ops, something is wrong. Try again later...');
+      alert('Ops, algo deu errado. Tente novamente mais tarde...');
       setLink('');
     }
   }
@@ -31,7 +31,7 @@ export default function Home() {
     <div className="container-home">
         <div className="logo">
             <img src="/Logo.png" alt="Sujeito Link Logo" />
-            <h1>SujeitoLink</h1>
+            <h1>DevLink</h1>
             <span>Cole seu link para encurtar 👇🏻</span>
         </div>
 
