@@ -8,4 +8,4 @@ App image :
  
 ![alt text](https://github.com/JGabriel-SL/my-link/blob/master/public/app-image.png?raw=true)
 
-![alt text](https://github.com/JGabriel-SL/my-link/blob/master/public/app-image2.png?raw=true)
+![alt text](https://github.com/JGabriel-SL/my-link/blob/master/public/app-image3.png?raw=true)
