@@ -5,6 +5,7 @@ import Menu from '../../components/Menu';
 import LinkItem from '../../components/LinkItem';
 
 import api from '../../services/api';
+import {saveLink} from '../../services/storeLinks';
 
 import './home.css';
 
@@ -19,8 +20,10 @@ export default function Home() {
         long_url: link
       })
       setData(response.data);
-      setLink('');
       setModal(true);
+      saveLink('@key_link', response.data);
+
+      setLink('');
     } catch {
       alert('Ops, algo deu errado. Tente novamente mais tarde...');
       setLink('');
